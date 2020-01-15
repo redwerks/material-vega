@@ -13,7 +13,7 @@
   "contributors": [
     "Daniel Friesen <d@danf.ca>"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/redwerks/material-vega/tree/master/packages/core#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -26,7 +26,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redwerks/material-vega.git"
+  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/redwerks/material-vega/issues"
   }
 }
