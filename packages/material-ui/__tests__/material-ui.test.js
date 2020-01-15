@@ -3,5 +3,5 @@
 const materialUi = require('..');
 
 describe('@material-vega/material-ui', () => {
-    it('needs tests');
+  it('needs tests');
 });
