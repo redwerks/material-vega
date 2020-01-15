@@ -25,10 +25,7 @@
       "version": "detect"
     }
   },
-  "plugins": [
-    "@typescript-eslint",
-    "jest"
-  ],
+  "plugins": ["@typescript-eslint", "jest"],
   "rules": {
     "eslint-comments/no-unused-disable": "warn",
     "eslint-comments/disable-enable-pair": [
@@ -41,9 +38,7 @@
   },
   "overrides": [
     {
-      "files": [
-        "__tests__"
-      ],
+      "files": ["__tests__"],
       "env": {
         "jest/globals": true
       },

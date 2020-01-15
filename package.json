@@ -24,7 +24,10 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
     "fork-ts-checker-webpack-plugin": "^3.1.1",
+    "husky": "^4.0.9",
     "lerna": "^3.20.2",
+    "license-validator": "^1.0.2",
+    "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-docgen-typescript-loader": "^3.6.0",
@@ -37,6 +40,20 @@
     "bootstrap": "lerna bootstrap --use-workspaces",
     "storybook-html": "node_modules/@storybook/html/bin/index.js -p 5501 -c .storybook/html",
     "storybook-react": "node_modules/@storybook/react/bin/index.js -p 5502 -c .storybook/react",
-    "lint": "eslint --cache 'packages/**/*.{js,jsx,ts,tsx}' --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint --cache 'packages/**/*.{js,jsx,ts,tsx}' --ext .js,.jsx,.ts,.tsx",
+    "pretty": "prettier --write \"packages/*/src/**/*.{js,jsx,ts,tsx}\" .eslintrc.json lerna.json tsconfig.json babel.config.js .storybook/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn workspaces run license-validator"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --cache --ext .js,.jsx,.ts,.tsx"
+    ]
+  },
+  "engines": {
+    "npm": "use yarn"
   }
 }
