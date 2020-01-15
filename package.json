@@ -5,10 +5,20 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@storybook/html": "^5.3.3",
+    "@storybook/react": "^5.3.3",
+    "babel-loader": "^8.0.6",
+    "lerna": "^3.20.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces"
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "storybook-html": "node_modules/@storybook/html/bin/index.js -p 5501 -c .storybook/html",
+    "storybook-react": "node_modules/@storybook/react/bin/index.js -p 5502 -c .storybook/react"
   }
 }
-
