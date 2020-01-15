@@ -1,7 +1,5 @@
-'use strict';
-
-const core = require('../lib');
+// import core from '../src';
 
 describe('@material-vega/core', () => {
-  it('needs tests');
+  // needs tests
 });

@@ -14,7 +14,15 @@
     "@storybook/react": "^5.3.3",
     "@types/jest": "^24.9.0",
     "@types/webpack": "^4.41.2",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
     "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-eslint-comments": "^3.1.2",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
     "fork-ts-checker-webpack-plugin": "^3.1.1",
     "lerna": "^3.20.2",
     "prettier": "^1.19.1",
@@ -28,6 +36,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "storybook-html": "node_modules/@storybook/html/bin/index.js -p 5501 -c .storybook/html",
-    "storybook-react": "node_modules/@storybook/react/bin/index.js -p 5502 -c .storybook/react"
+    "storybook-react": "node_modules/@storybook/react/bin/index.js -p 5502 -c .storybook/react",
+    "lint": "eslint --cache 'packages/**/*.{js,jsx,ts,tsx}' --ext .js,.jsx,.ts,.tsx"
   }
 }

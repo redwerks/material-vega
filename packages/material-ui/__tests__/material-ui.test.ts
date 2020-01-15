@@ -1,7 +1,5 @@
-'use strict';
-
-const materialUi = require('../lib');
+// import materialUi from '../src';
 
 describe('@material-vega/material-ui', () => {
-  it('needs tests');
+  // needs tests
 });
