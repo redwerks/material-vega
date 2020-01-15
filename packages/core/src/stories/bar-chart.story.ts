@@ -1,5 +1,6 @@
 import vegaEmbed from 'vega-embed';
 import { TopLevelSpec } from 'vega-lite';
+import { config, patch } from '../';
 
 export default { title: 'Bar Chart' };
 
@@ -29,7 +30,16 @@ export const Basic = (): HTMLElement => {
     }
   };
 
-  vegaEmbed(div, spec, { actions: false });
+  // @todo Simplify with a @material-vega/embed package
+  vegaEmbed(div, spec, {
+    actions: false,
+    patch: spec => {
+      console.log(spec);
+
+      return patch(spec);
+    },
+    config
+  });
 
   return div;
 };
