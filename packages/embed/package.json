@@ -1,0 +1,39 @@
+{
+  "name": "@material-vega/embed",
+  "version": "0.0.0",
+  "description": "Publish Material Design stylized Vega visualizations as embedded web components",
+  "keywords": [
+    "vega",
+    "vega-lite",
+    "visualization",
+    "embed",
+    "material design"
+  ],
+  "author": "Redwerks (https://redwerks.org/)",
+  "contributors": [
+    "Daniel Friesen <d@danf.ca>"
+  ],
+  "homepage": "https://github.com/redwerks/material-vega/tree/master/packages/embed#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redwerks/material-vega.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/redwerks/material-vega/issues"
+  }
+}
