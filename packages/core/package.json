@@ -35,5 +35,10 @@
   },
   "bugs": {
     "url": "https://github.com/redwerks/material-vega/issues"
+  },
+  "peerDependencies": {
+    "vega": ">= 5.8.0",
+    "vega-lite": "*",
+    "vega-embed": ">= 6.0.0"
   }
 }

@@ -1,6 +1,5 @@
-import vegaEmbed from 'vega-embed';
+import vegaEmbed from '..';
 import { TopLevelSpec } from 'vega-lite';
-import { MaterialVegaTheme } from '../';
 
 export default { title: 'Bar Chart' };
 
@@ -40,17 +39,9 @@ export const Basic = (): HTMLElement => {
     }
   };
 
-  // @todo Simplify with a @material-vega/embed package
-  const theme = new MaterialVegaTheme({});
   vegaEmbed(div, spec, {
-    // actions: false,
-    renderer: 'svg',
-    patch: spec => {
-      console.log(spec);
-
-      return theme.patch(spec);
-    },
-    config: theme.config
+    actions: true,
+    renderer: 'svg'
   });
 
   return div;
@@ -91,17 +82,9 @@ export const Horizontal = (): HTMLElement => {
     }
   };
 
-  // @todo Simplify with a @material-vega/embed package
-  const theme = new MaterialVegaTheme({});
   vegaEmbed(div, spec, {
-    // actions: false,
-    renderer: 'svg',
-    patch: spec => {
-      console.log(spec);
-
-      return theme.patch(spec);
-    },
-    config: theme.config
+    actions: true,
+    renderer: 'svg'
   });
 
   return div;

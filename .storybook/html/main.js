@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  stories: ['../../packages/core/src/**/*.story.{js,jsx,ts,tsx}'],
+  stories: [
+    '../../packages/core/src/**/*.story.{js,jsx,ts,tsx}',
+    '../../packages/embed/src/**/*.story.{js,jsx,ts,tsx}'
+  ],
   addons: [
     {
       name: '@storybook/preset-typescript',
@@ -12,7 +15,10 @@ module.exports = {
         tsDocgenLoaderOptions: {
           tsconfigPath: path.resolve(__dirname, '../../tsconfig.json')
         },
-        include: [path.resolve(__dirname, '../../packages/core')]
+        include: [
+          path.resolve(__dirname, '../../packages/core'),
+          path.resolve(__dirname, '../../packages/embed')
+        ]
       }
     }
   ]
