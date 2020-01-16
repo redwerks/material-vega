@@ -1,2 +1,1 @@
-export { config } from './config';
-export { patch } from './patch';
+export * from './MaterialVegaTheme';

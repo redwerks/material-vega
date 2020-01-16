@@ -1,9 +1,10 @@
 import { PatchFunc } from 'vega-embed';
+import { MaterialVegaOptions } from '../options';
 
 /**
  * Patches a Vega spec with Material Design styles
  */
-export const patch: PatchFunc = spec => {
+export const patch = (options: MaterialVegaOptions): PatchFunc => spec => {
   if (spec.marks) {
     for (const mark of spec.marks) {
       if (mark.type == 'rect' && mark.style && mark.style.includes('bar')) {
@@ -11,7 +12,7 @@ export const patch: PatchFunc = spec => {
         mark.encode = mark.encode || {};
         const enter = (mark.encode.enter = mark.encode.enter || {});
 
-        const cornerRadius = 3;
+        const cornerRadius = options.cornerRadius;
         if (mark.encode.update.height && !mark.encode.update.enter) {
           // Horizontal
           // @todo Reverse horizontal?
