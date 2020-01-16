@@ -6,7 +6,11 @@ export const chart = (spec: TopLevelSpec) => (): HTMLElement => {
 
   vegaEmbed(div, spec, {
     actions: true,
-    renderer: 'svg'
+    renderer: 'svg',
+    patch: spec => {
+      console.log(spec);
+      return spec;
+    }
   });
 
   return div;

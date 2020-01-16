@@ -38,7 +38,10 @@
   },
   "peerDependencies": {
     "vega": ">= 5.8.0",
-    "vega-lite": "*",
-    "vega-embed": ">= 6.0.0"
+    "vega-embed": ">= 6.0.0",
+    "vega-lite": "*"
+  },
+  "dependencies": {
+    "lodash.merge": "^4.6.2"
   }
 }

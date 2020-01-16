@@ -1,7 +1,7 @@
+import merge from 'lodash.merge';
 import vegaEmbed, { VisualizationSpec, Result, Config } from 'vega-embed';
 import { MaterialVegaTheme } from '../../core/src';
 import { MaterialEmbedOptions } from './interface';
-import * as deepmerge from 'deepmerge';
 
 export function embed(
   el: HTMLElement | string,
@@ -25,6 +25,6 @@ export function embed(
       return spec;
     },
     // Augment config
-    config: deepmerge<Config>(theme.config, opts.config || {})
+    config: merge(theme.config, opts.config || {})
   });
 }

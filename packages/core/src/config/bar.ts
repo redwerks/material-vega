@@ -1,6 +1,6 @@
-import { RectConfig } from 'vega-lite/build/src/mark';
+import { Config } from 'vega-embed';
 import { MaterialVegaOptions } from '../options';
 
-export const barConfig = (options: MaterialVegaOptions): RectConfig => {
+export const barConfig = (options: MaterialVegaOptions): Config => {
   return {};
 };

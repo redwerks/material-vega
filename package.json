@@ -13,6 +13,7 @@
     "@storybook/preset-typescript": "^1.2.0",
     "@storybook/react": "^5.3.3",
     "@types/jest": "^24.9.0",
+    "@types/lodash.merge": "^4.6.6",
     "@types/webpack": "^4.41.2",
     "@typescript-eslint/eslint-plugin": "^2.16.0",
     "@typescript-eslint/parser": "^2.16.0",
@@ -59,5 +60,6 @@
   },
   "engines": {
     "npm": "use yarn"
-  }
+  },
+  "dependencies": {}
 }
