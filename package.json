@@ -44,7 +44,7 @@
     "storybook-html": "node_modules/@storybook/html/bin/index.js -p 5501 -c .storybook/html",
     "storybook-react": "node_modules/@storybook/react/bin/index.js -p 5502 -c .storybook/react",
     "lint": "eslint --cache 'packages/**/*.{js,jsx,ts,tsx}' --ext .js,.jsx,.ts,.tsx",
-    "pretty": "prettier --write \"packages/*/src/**/*.{js,jsx,ts,tsx}\" .eslintrc.json lerna.json tsconfig.json babel.config.js .storybook/**/*.js",
+    "pretty": "prettier --write \"packages/*/src/**/*.{js,jsx,ts,tsx}\" .eslintrc.js lerna.json tsconfig.json babel.config.js .storybook/**/*.js",
     "license": "yarn workspaces run license-validator -i"
   },
   "husky": {

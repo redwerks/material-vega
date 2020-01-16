@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  stories: ['../../packages/material-ui/src/**/*.story.{js,jsx,ts,tsx}']
+  stories: ['../../packages/material-ui/src/**/*.story.{js,jsx,ts,tsx}'],
   addons: [
     {
       name: '@storybook/preset-typescript',
@@ -15,5 +15,5 @@ module.exports = {
         include: [path.resolve(__dirname, '../../packages/material-ui')]
       }
     }
-  ],
+  ]
 };
