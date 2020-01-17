@@ -1824,6 +1824,26 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@redwerks/eslint-config-jest@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@redwerks/eslint-config-jest/-/eslint-config-jest-0.2.1.tgz#e9648d53485030e1c74f9e61c9447266a958d5de"
+  integrity sha512-2ChrK1jal2bnuO7WUeEHt7AjKWaTpOzOjnlnicqNgUK1u9SXV5Il9NNIOKTLF/pp8alViAx3anzexb5dvKXtQQ==
+
+"@redwerks/eslint-config-react@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@redwerks/eslint-config-react/-/eslint-config-react-0.2.1.tgz#e7c665eb13415aa688c9652897bacaca4692f68c"
+  integrity sha512-q6auH9N27uxmwrNhtfAAJs1d2z9ySSccdJ3q0xv5CUjWdrEHE8GR/ILYKTz7ILOliF5brZqNlTjesVbmY3M09g==
+
+"@redwerks/eslint-config-typescript@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@redwerks/eslint-config-typescript/-/eslint-config-typescript-0.2.1.tgz#c0c1b2b8ac07660be82d240ac9fef96e96725524"
+  integrity sha512-5EOHQcXXqaunu63VGNBRVDDHIzswBmP3N+NccM7ie3U226PUDSqPY8oKDn+BDqZmXXOjFCNOuB/z1aXQes8DRw==
+
+"@redwerks/eslint-config@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@redwerks/eslint-config/-/eslint-config-0.2.1.tgz#902046e7da68a456202e6f2dfa69d5467668f623"
+  integrity sha512-8Mmr0MC5kYiSYGr943ZydnYuR1R8PYRLk8hxmevgI0rvE2VDbBoR+uN/PO/Vs0RQX6V6B+yXh1ODmkodQA3BMA==
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
