@@ -10,11 +10,10 @@ export const Basic = chart(
     transform: [{ filter: "datum.symbol==='GOOG'" }],
     mark: 'line',
     encoding: {
-      x: { field: 'date', type: 'temporal', axis: { title: null } },
+      x: { field: 'date', type: 'temporal' },
       y: {
         field: 'price',
-        type: 'quantitative',
-        axis: { orient: 'right', title: null }
+        type: 'quantitative'
       }
     }
   },
@@ -30,18 +29,11 @@ export const WithLegend = chart(
     encoding: {
       x: {
         field: 'date',
-        type: 'temporal',
-        axis: {
-          title: null
-        }
+        type: 'temporal'
       },
       y: {
         field: 'price',
-        type: 'quantitative',
-        axis: {
-          orient: 'right',
-          title: null
-        }
+        type: 'quantitative'
       },
       color: { field: 'symbol', type: 'nominal' }
     }

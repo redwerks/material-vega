@@ -20,8 +20,7 @@ export const Basic = chart(
         field: 'quarter',
         type: 'nominal',
         axis: {
-          ticks: false,
-          title: null
+          ticks: false
         },
         band: 0.5
       },
@@ -29,9 +28,7 @@ export const Basic = chart(
         field: 'percent',
         type: 'quantitative',
         axis: {
-          format: 'p',
-          orient: 'right',
-          title: null
+          format: 'p'
         }
       }
     }
@@ -57,17 +54,13 @@ export const Horizontal = chart(
         field: 'percent',
         type: 'quantitative',
         axis: {
-          format: 'p',
-          title: null
+          format: 'p'
         }
       },
       y: {
         field: 'quarter',
         type: 'nominal',
-        axis: {
-          orient: 'left',
-          title: null
-        },
+
         band: 0.75
       }
     }
@@ -105,18 +98,13 @@ export const Focused = chart(
       x: {
         field: 'quarter',
         type: 'nominal',
-        axis: {
-          title: null
-        },
         band: 0.7
       },
       y: {
         field: 'percent',
         type: 'quantitative',
         axis: {
-          format: 'p',
-          orient: 'right',
-          title: null
+          format: 'p'
         }
       }
     }

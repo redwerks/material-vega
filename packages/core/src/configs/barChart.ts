@@ -39,6 +39,11 @@ export const createHorizontalBarConfig = (
       domain: true,
       domainWidth: options.thickDomainLineWidth
     },
+    axisY: {
+      // Fix orientation of the Y axis on horizontal bar charts
+      orient: 'left',
+      labelAlign: 'right'
+    },
     bar: {
       cornerRadiusTopRight: options.cornerRadius,
       cornerRadiusBottomRight: options.cornerRadius
