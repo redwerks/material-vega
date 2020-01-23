@@ -25,8 +25,9 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       domainColor: options.dividerColor,
       // Tick lines
       tickColor: options.dividerColor,
-      // Grid lines
+      // Grid lines (lighter than domain lines)
       gridColor: options.dividerColor,
+      gridOpacity: 0.5,
       grid: false,
       // Label text
       labelColor: options.secondaryTextColor,
