@@ -1,17 +1,17 @@
 import { TopLevelSpec } from 'vega-lite';
-import vegaEmbed, { Config } from 'vega-embed';
-import { MaterialVegaOptions } from '../options';
+import vegaEmbed from 'vega-embed';
+import { ThemeTypes, createTheme } from '../theme';
 
 export const chart = (
   spec: TopLevelSpec,
-  createConfig: (options: Partial<MaterialVegaOptions>) => Config
+  theme: ThemeTypes
 ) => (): HTMLElement => {
   const div = document.createElement('div');
 
   vegaEmbed(div, spec, {
     actions: true,
     renderer: 'svg',
-    config: createConfig({})
+    config: createTheme({}, theme)
   });
 
   return div;

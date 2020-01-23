@@ -1,5 +1,4 @@
 import { chart } from './_common.story';
-import { createLineChartTheme } from '../';
 
 export default { title: 'Line Chart' };
 
@@ -19,5 +18,5 @@ export const Basic = chart(
       }
     }
   },
-  createLineChartTheme
+  'lineChart'
 );

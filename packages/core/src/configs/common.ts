@@ -52,3 +52,20 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
     }
   };
 };
+
+/**
+ * Create config common to all vertical Material chart types
+ */
+export const createVerticalCommonConfig = (
+  options: MaterialVegaOptions
+): Config => {
+  return {};
+};
+/**
+ * Create config common to all left aligned horizontal Material chart types
+ */
+export const createHorizontalCommonConfig = (
+  options: MaterialVegaOptions
+): Config => {
+  return {};
+};

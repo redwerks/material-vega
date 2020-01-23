@@ -1,13 +1,11 @@
 import { Config } from 'vega-embed';
-import { mergeConfig } from 'vega';
-import { MaterialVegaOptions, extendDefaults } from '../options';
-import { createCommonConfig } from './common';
+import { MaterialVegaOptions } from '../options';
 
 /**
- * Create config common to bar chart types
+ * Create config common to all bar chart types
  */
 export const createBarConfig = (options: MaterialVegaOptions): Config => {
-  return mergeConfig(createCommonConfig(options), {});
+  return {};
 };
 
 /**
@@ -16,7 +14,7 @@ export const createBarConfig = (options: MaterialVegaOptions): Config => {
 export const createVerticalBarConfig = (
   options: MaterialVegaOptions
 ): Config => {
-  return mergeConfig(createBarConfig(options), {
+  return {
     axisBottom: {
       // Extra thick bottom line
       domain: true,
@@ -26,7 +24,7 @@ export const createVerticalBarConfig = (
       cornerRadiusTopLeft: options.cornerRadius,
       cornerRadiusTopRight: options.cornerRadius
     }
-  });
+  };
 };
 
 /**
@@ -35,7 +33,7 @@ export const createVerticalBarConfig = (
 export const createHorizontalBarConfig = (
   options: MaterialVegaOptions
 ): Config => {
-  return mergeConfig(createBarConfig(options), {
+  return {
     axisLeft: {
       // Extra thick left line
       domain: true,
@@ -45,23 +43,5 @@ export const createHorizontalBarConfig = (
       cornerRadiusTopRight: options.cornerRadius,
       cornerRadiusBottomRight: options.cornerRadius
     }
-  });
-};
-
-/**
- * Create a vertical bar chart theme
- */
-export const createVerticalBarChartTheme = (
-  options: Partial<MaterialVegaOptions>
-): Config => {
-  return createVerticalBarConfig(extendDefaults(options));
-};
-
-/**
- * Create a horizontal bar chart theme
- */
-export const createHorizontalBarChartTheme = (
-  options: Partial<MaterialVegaOptions>
-): Config => {
-  return createHorizontalBarConfig(extendDefaults(options));
+  };
 };

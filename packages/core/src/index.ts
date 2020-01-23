@@ -1,2 +1,2 @@
 export * from './options';
-export * from './themes';
+export * from './theme';

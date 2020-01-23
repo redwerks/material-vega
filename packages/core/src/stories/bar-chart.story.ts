@@ -1,8 +1,4 @@
 import { chart } from './_common.story';
-import {
-  createVerticalBarChartTheme,
-  createHorizontalBarChartTheme
-} from '../';
 
 export default { title: 'Bar Chart' };
 
@@ -40,7 +36,7 @@ export const Basic = chart(
       }
     }
   },
-  createVerticalBarChartTheme
+  'verticalBarChart'
 );
 
 export const Horizontal = chart(
@@ -76,5 +72,5 @@ export const Horizontal = chart(
       }
     }
   },
-  createHorizontalBarChartTheme
+  'horizontalBarChart'
 );
