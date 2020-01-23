@@ -27,7 +27,7 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       tickColor: options.dividerColor,
       // Grid lines
       gridColor: options.dividerColor,
-      grid: true,
+      grid: false,
       // Label text
       labelColor: options.secondaryTextColor,
       // Apply a material padding between the label and chart
@@ -36,10 +36,6 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       labelAngle: 0,
       // Title text,
       titleColor: options.secondaryTextColor
-    },
-    axisBand: {
-      // Hide grid lines parallel to bars
-      grid: false
     },
     axisY: {
       // No y-axis domain line or ticks
@@ -59,7 +55,11 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
 export const createVerticalCommonConfig = (
   options: MaterialVegaOptions
 ): Config => {
-  return {};
+  return {
+    axisY: {
+      grid: true
+    }
+  };
 };
 /**
  * Create config common to all left aligned horizontal Material chart types
@@ -67,5 +67,9 @@ export const createVerticalCommonConfig = (
 export const createHorizontalCommonConfig = (
   options: MaterialVegaOptions
 ): Config => {
-  return {};
+  return {
+    axisX: {
+      grid: true
+    }
+  };
 };
