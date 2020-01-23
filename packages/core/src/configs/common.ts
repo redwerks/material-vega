@@ -46,6 +46,15 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
     view: {
       // Hide the square chart border
       strokeWidth: 0
+    },
+    legend: {
+      // Default to legends below the chart
+      orient: 'bottom',
+      // Title text (disabled by default)
+      title: null,
+      titleColor: options.textColor,
+      // Label text
+      labelColor: options.textColor
     }
   };
 };

@@ -20,3 +20,31 @@ export const Basic = chart(
   },
   'lineChart'
 );
+
+export const WithLegend = chart(
+  {
+    $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+    description: 'Stock prices of 5 Tech Companies over Time.',
+    data: { url: 'https://vega.github.io/vega-lite/examples/data/stocks.csv' },
+    mark: 'line',
+    encoding: {
+      x: {
+        field: 'date',
+        type: 'temporal',
+        axis: {
+          title: null
+        }
+      },
+      y: {
+        field: 'price',
+        type: 'quantitative',
+        axis: {
+          orient: 'right',
+          title: null
+        }
+      },
+      color: { field: 'symbol', type: 'nominal' }
+    }
+  },
+  'lineChart'
+);
