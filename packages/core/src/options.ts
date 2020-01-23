@@ -38,3 +38,10 @@ export const materialVegaOptionDefaults: MaterialVegaOptions = {
   dividerColor: 'rgba(0, 0, 0, 0.12)',
   thickDomainLineWidth: 2
 };
+
+/**
+ * Apply default values to user supplied material vega options
+ */
+export function extendDefaults(options: Partial<MaterialVegaOptions>) {
+  return Object.assign({}, materialVegaOptionDefaults, options);
+}

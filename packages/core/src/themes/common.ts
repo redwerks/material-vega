@@ -1,7 +1,10 @@
 import { Config } from 'vega-embed';
 import { MaterialVegaOptions } from '../options';
 
-export const commonConfig = (options: MaterialVegaOptions): Config => {
+/**
+ * Create config common to all Material chart types
+ */
+export const createCommonConfig = (options: MaterialVegaOptions): Config => {
   return {
     style: {
       'guide-label': {
@@ -33,10 +36,6 @@ export const commonConfig = (options: MaterialVegaOptions): Config => {
       labelAngle: 0,
       // Title text,
       titleColor: options.secondaryTextColor
-    },
-    axisBottom: {
-      // Extra thick bottom line
-      domainWidth: options.thickDomainLineWidth
     },
     axisBand: {
       // Hide grid lines parallel to bars
