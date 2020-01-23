@@ -3,6 +3,7 @@
     "module": "ES2015",
     "target": "ESNext",
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   }
 }
