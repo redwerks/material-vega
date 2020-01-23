@@ -3,6 +3,7 @@ import {
   createBarConfig,
   createVerticalBarConfig,
   createHorizontalBarConfig,
+  createFocusedBarConfig,
   createLineConfig,
   createHorizontalCommonConfig,
   createVerticalCommonConfig
@@ -18,6 +19,13 @@ export const themes = {
     createVerticalCommonConfig,
     createBarConfig,
     createVerticalBarConfig
+  ],
+  focusedVerticalBarChart: [
+    createCommonConfig,
+    createVerticalCommonConfig,
+    createBarConfig,
+    createVerticalBarConfig,
+    createFocusedBarConfig
   ],
   horizontalBarChart: [
     createCommonConfig,

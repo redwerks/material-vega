@@ -45,3 +45,32 @@ export const createHorizontalBarConfig = (
     }
   };
 };
+
+/**
+ * Create config common to axis-less "focused" bar chart types
+ */
+export const createFocusedBarConfig = (
+  options: MaterialVegaOptions
+): Config => {
+  return {
+    axis: {
+      labels: false,
+      ticks: false
+    },
+    axisBand: {
+      labels: true
+    },
+    axisBottom: {
+      domain: false
+    },
+    axisLeft: {
+      domain: false
+    },
+    axisY: {
+      grid: false
+    },
+    axisX: {
+      grid: false
+    }
+  };
+};
