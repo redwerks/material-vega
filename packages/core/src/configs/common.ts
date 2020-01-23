@@ -36,14 +36,14 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       // Do not angle label text
       labelAngle: 0,
       // Title text,
-      titleColor: options.secondaryTextColor
+      titleColor: options.secondaryTextColor,
+      // Disable the title by default
+      title: null
     },
     axisY: {
       // Default the Y axis to right orientation
       orient: 'right',
       labelAlign: 'left',
-      // Disable the title by default
-      title: null,
       // No y-axis domain line or ticks
       domain: false,
       ticks: false
