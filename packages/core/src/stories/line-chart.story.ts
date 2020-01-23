@@ -1,6 +1,7 @@
 import { chart } from './_common.story';
+import * as pkg from '../../package.json';
 
-export default { title: 'Line Chart' };
+export default { title: `${pkg.name}|Line Chart` };
 
 export const Basic = chart(
   {

@@ -4,7 +4,8 @@ function createTheme(pkg) {
   return create({
     base: 'light',
     brandTitle: pkg.name,
-    brandUrl: pkg.homepage
+    brandUrl: pkg.homepage,
+    brandImage: require('./horizontal-logo.png')
   });
 }
 
