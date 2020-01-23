@@ -25,6 +25,7 @@ export const WithLegend = chart(
     $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
     description: 'Stock prices of 5 Tech Companies over Time.',
     data: { url: 'https://vega.github.io/vega-lite/examples/data/stocks.csv' },
+    transform: [{ filter: "datum.symbol!=='GOOG'" }],
     mark: 'line',
     encoding: {
       x: {
