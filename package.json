@@ -9,6 +9,7 @@
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
+    "@material-vega/storybook-addon-chart-panels": "*",
     "@redwerks/eslint-config": "^0.2.1",
     "@redwerks/eslint-config-jest": "^0.2.1",
     "@redwerks/eslint-config-react": "^0.2.1",
@@ -35,6 +36,7 @@
     "lerna": "^3.20.2",
     "license-validator": "^1.0.2",
     "lint-staged": "^9.5.0",
+    "lit-html": "^1.1.2",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-docgen-typescript-loader": "^3.6.0",
@@ -68,6 +70,5 @@
   },
   "engines": {
     "npm": "use yarn"
-  },
-  "dependencies": {}
+  }
 }

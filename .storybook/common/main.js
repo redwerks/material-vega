@@ -15,7 +15,8 @@ function createMain(subpackage) {
           },
           include: [path.resolve(__dirname, '../../packages', subpackage)]
         }
-      }
+      },
+      '@material-vega/storybook-addon-chart-panels'
     ]
   };
 }

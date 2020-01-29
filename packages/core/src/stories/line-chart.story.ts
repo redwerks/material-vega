@@ -1,7 +1,6 @@
 import { chart } from './_common.story';
-import * as pkg from '../../package.json';
 
-export default { title: `${pkg.name}|Line Chart` };
+export default { title: 'Material Vega Core/Line Chart' };
 
 export const Basic = chart(
   {

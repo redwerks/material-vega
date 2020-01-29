@@ -108,3 +108,4 @@ dist
 
 # Build directories
 build/
+lib/
