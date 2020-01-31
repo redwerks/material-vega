@@ -17,3 +17,23 @@ export const createAreaConfig = (options: MaterialVegaOptions): Config => {
     }
   };
 };
+
+/**
+ * Create config common to area-line chart types
+ */
+export const createAreaLineConfig = (options: MaterialVegaOptions): Config => {
+  return {
+    axisBottom: {
+      // Extra thick bottom line
+      domain: true,
+      domainWidth: options.thickDomainLineWidth
+    },
+    line: {
+      strokeWidth: 2
+    },
+    area: {
+      line: true,
+      fillOpacity: 0.3
+    }
+  };
+};

@@ -8,7 +8,7 @@ import {
   createHorizontalCommonConfig,
   createVerticalCommonConfig
 } from '../configs';
-import { createAreaConfig } from '../configs/areaChart';
+import { createAreaConfig, createAreaLineConfig } from '../configs/areaChart';
 
 /**
  * Internal mapping of theme names to the config object generators for that theme
@@ -35,7 +35,12 @@ export const themes = {
     createHorizontalBarConfig
   ],
   lineChart: [createCommonConfig, createVerticalCommonConfig, createLineConfig],
-  areaChart: [createCommonConfig, createVerticalCommonConfig, createAreaConfig]
+  areaChart: [createCommonConfig, createVerticalCommonConfig, createAreaConfig],
+  areaLineChart: [
+    createCommonConfig,
+    createVerticalCommonConfig,
+    createAreaLineConfig
+  ]
 };
 
 /**
