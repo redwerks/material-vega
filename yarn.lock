@@ -1872,6 +1872,19 @@
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
+"@storybook/addons@5.3.9":
+  version "5.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.3.9.tgz#f2492de356e0cd38e3da357f4dafa058a4756e36"
+  integrity sha512-LrlO6nQ4S6yroFuG9Pn1rXhg0AjT/jx7UKZjZTJNqo4ZdPy88QhQO0ClbOVL+KhUiY773zEBYIk0BvwA3WYtSQ==
+  dependencies:
+    "@storybook/api" "5.3.9"
+    "@storybook/channels" "5.3.9"
+    "@storybook/client-logger" "5.3.9"
+    "@storybook/core-events" "5.3.9"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/api@5.3.8":
   version "5.3.8"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-5.3.8.tgz#5f887911c87d1e6e1d8c12106c17f05377c6544b"
@@ -1898,7 +1911,7 @@
     telejson "^3.2.0"
     util-deprecate "^1.0.2"
 
-"@storybook/api@^5.3.9":
+"@storybook/api@5.3.9", "@storybook/api@^5.3.9":
   version "5.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-5.3.9.tgz#090119c6fd4082442e926a434d3d171535ec6784"
   integrity sha512-ix6WS880K5C3H4wjEN0IKqIlVNV0f7zHgvyRf8maL1UFEya5wkBkZg9REDOiCH0tSByzRN73NmPdII3Q1FoAvA==
@@ -1993,6 +2006,33 @@
   dependencies:
     "@storybook/client-logger" "5.3.8"
     "@storybook/theming" "5.3.8"
+    "@types/react-syntax-highlighter" "11.0.2"
+    "@types/react-textarea-autosize" "^4.3.3"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    lodash "^4.17.15"
+    markdown-to-jsx "^6.9.1"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    popper.js "^1.14.7"
+    prop-types "^15.7.2"
+    react "^16.8.3"
+    react-dom "^16.8.3"
+    react-focus-lock "^2.1.0"
+    react-helmet-async "^1.0.2"
+    react-popper-tooltip "^2.8.3"
+    react-syntax-highlighter "^11.0.2"
+    react-textarea-autosize "^7.1.0"
+    simplebar-react "^1.0.0-alpha.6"
+    ts-dedent "^1.1.0"
+
+"@storybook/components@5.3.9", "@storybook/components@^5.3.9":
+  version "5.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.3.9.tgz#1fbc688770889ddadb8c603f5a4dbcf987f3eb0f"
+  integrity sha512-R4xDR3pIYu7yPHex6DG3PPC3ekLgQuG03ZMQEgCfmWdl2wKXcLtEfQPYLRpC59xnQobfR3wqWgqrGchW54HPow==
+  dependencies:
+    "@storybook/client-logger" "5.3.9"
+    "@storybook/theming" "5.3.9"
     "@types/react-syntax-highlighter" "11.0.2"
     "@types/react-textarea-autosize" "^4.3.3"
     core-js "^3.0.1"
@@ -2186,7 +2226,7 @@
     qs "^6.6.0"
     util-deprecate "^1.0.2"
 
-"@storybook/router@5.3.9":
+"@storybook/router@5.3.9", "@storybook/router@^5.3.9":
   version "5.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/router/-/router-5.3.9.tgz#3c6e01f4dced9de8e8c5c314352fdc437f2441c2"
   integrity sha512-z7ptxekGRAXP7hU74wdfeFY/ugrHXtpQcAM1X0k4tvbasJpm+fvqAD3yEYQpfEDL7cLlHEFLbOm6xDqtf1e5qQ==
@@ -2201,7 +2241,7 @@
     qs "^6.6.0"
     util-deprecate "^1.0.2"
 
-"@storybook/theming@5.3.8", "@storybook/theming@^5.3.8":
+"@storybook/theming@5.3.8":
   version "5.3.8"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.3.8.tgz#7c0cb31e65c9da690dab50a99996f3e7c106ce97"
   integrity sha512-W3LDFoLg7wnBnqz1GB6EZpTOdFvNObwyKV2vDjY2YNFPc2TN/w4LAQA+4Lgh3Py0O1j1v3796QwOgui+i1W0pw==
@@ -2219,7 +2259,7 @@
     resolve-from "^5.0.0"
     ts-dedent "^1.1.0"
 
-"@storybook/theming@5.3.9":
+"@storybook/theming@5.3.9", "@storybook/theming@^5.3.9":
   version "5.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-5.3.9.tgz#caaeea398f9e630394298ccfe8f36a185a289e4f"
   integrity sha512-1vG+H1D5j2vcMv54eEKixAoa4UlTuS/dxMZubJfcZYY1PDNtnvQM6B1CE/4EU+qsIYPFQiGFXB4b6gjCFYIFpQ==
@@ -2251,6 +2291,46 @@
     "@storybook/core-events" "5.3.8"
     "@storybook/router" "5.3.8"
     "@storybook/theming" "5.3.8"
+    copy-to-clipboard "^3.0.8"
+    core-js "^3.0.1"
+    core-js-pure "^3.0.1"
+    emotion-theming "^10.0.19"
+    fast-deep-equal "^2.0.1"
+    fuse.js "^3.4.6"
+    global "^4.3.2"
+    lodash "^4.17.15"
+    markdown-to-jsx "^6.9.3"
+    memoizerific "^1.11.3"
+    polished "^3.3.1"
+    prop-types "^15.7.2"
+    qs "^6.6.0"
+    react "^16.8.3"
+    react-dom "^16.8.3"
+    react-draggable "^4.0.3"
+    react-helmet-async "^1.0.2"
+    react-hotkeys "2.0.0"
+    react-sizeme "^2.6.7"
+    regenerator-runtime "^0.13.2"
+    resolve-from "^5.0.0"
+    semver "^6.0.0"
+    store2 "^2.7.1"
+    telejson "^3.2.0"
+    util-deprecate "^1.0.2"
+
+"@storybook/ui@^5.3.9":
+  version "5.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/ui/-/ui-5.3.9.tgz#7e084ef93abb90b50ac18d4eea879c1f16b3e741"
+  integrity sha512-J1ktdeNaEGJmJUNFPGej71eVmjKct9DXaZq88eY3hwjrdfbBIPFrF6kUcAiP4SY900VlwMKuEtUJDcJpz55FYw==
+  dependencies:
+    "@emotion/core" "^10.0.20"
+    "@storybook/addons" "5.3.9"
+    "@storybook/api" "5.3.9"
+    "@storybook/channels" "5.3.9"
+    "@storybook/client-logger" "5.3.9"
+    "@storybook/components" "5.3.9"
+    "@storybook/core-events" "5.3.9"
+    "@storybook/router" "5.3.9"
+    "@storybook/theming" "5.3.9"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
     core-js-pure "^3.0.1"

@@ -23,7 +23,6 @@ const Chart: FunctionComponent<ChartProps> = props => {
     };
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const onChart = (id: string, spec: any): void => {
-      console.log('chart', id, spec);
       setChart(spec);
     };
     // const onRendered = (name: string): void => {};

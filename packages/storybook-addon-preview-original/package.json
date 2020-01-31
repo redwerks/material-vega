@@ -1,7 +1,7 @@
 {
-  "name": "@material-vega/storybook-addon-chart-panels",
+  "name": "@material-vega/storybook-addon-preview-original",
   "version": "0.0.0",
-  "description": "Storybook addon for Material Vega that adds a panel with Vega chart JSON",
+  "description": "Storybook addon for Material Vega that adds a button to switch between themed and original previews",
   "keywords": [
     "storybook",
     "storybook-addon",
@@ -11,7 +11,7 @@
   "contributors": [
     "Daniel Friesen <d@danf.ca>"
   ],
-  "homepage": "https://github.com/redwerks/material-vega/tree/master/packages/storybook-addon-chart-panels#readme",
+  "homepage": "https://github.com/redwerks/material-vega/tree/master/packages/storybook-addon-preview-original#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
@@ -39,10 +39,11 @@
   "private": true,
   "dependencies": {
     "@storybook/api": "^5.3.9",
+    "@storybook/components": "^5.3.9",
     "@storybook/core-events": "^5.3.9",
-    "stringify-object": "^3.3.0"
-  },
-  "devDependencies": {
-    "@types/stringify-object": "^3.2.0"
+    "@storybook/router": "^5.3.9",
+    "@storybook/theming": "^5.3.9",
+    "@storybook/ui": "^5.3.9",
+    "lodash.merge": "^4.6.2"
   }
 }
