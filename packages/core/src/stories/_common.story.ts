@@ -1,9 +1,13 @@
 import { StoryContext, StoryFn } from '@storybook/addons';
+import { Spec } from 'vega';
 import { TopLevelSpec } from 'vega-lite';
 import vegaEmbed from 'vega-embed';
 import { ThemeTypes, createTheme } from '../theme';
 
-export const chart = (spec: TopLevelSpec, theme: ThemeTypes): StoryFn => {
+export const chart = (
+  spec: Spec | TopLevelSpec,
+  theme: ThemeTypes
+): StoryFn => {
   const Story = (c: StoryContext): HTMLElement => {
     const div = document.createElement('div');
 

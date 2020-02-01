@@ -1,14 +1,17 @@
 import {
-  createCommonConfig,
+  createAreaConfig,
+  createAreaLineConfig,
   createBarConfig,
-  createVerticalBarConfig,
-  createHorizontalBarConfig,
+  createCommonConfig,
+  createDonutConfig,
   createFocusedBarConfig,
-  createLineConfig,
+  createHorizontalBarConfig,
   createHorizontalCommonConfig,
+  createLineConfig,
+  createPieConfig,
+  createVerticalBarConfig,
   createVerticalCommonConfig
 } from '../configs';
-import { createAreaConfig, createAreaLineConfig } from '../configs/areaChart';
 
 /**
  * Internal mapping of theme names to the config object generators for that theme
@@ -40,7 +43,9 @@ export const themes = {
     createCommonConfig,
     createVerticalCommonConfig,
     createAreaLineConfig
-  ]
+  ],
+  pieChart: [createCommonConfig, createPieConfig],
+  donutChart: [createCommonConfig, createDonutConfig]
 };
 
 /**
