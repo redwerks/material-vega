@@ -10,7 +10,8 @@ import {
   createLineConfig,
   createPieConfig,
   createVerticalBarConfig,
-  createVerticalCommonConfig
+  createVerticalCommonConfig,
+  createScatterplotConfig
 } from '../configs';
 
 /**
@@ -45,7 +46,8 @@ export const themes = {
     createAreaLineConfig
   ],
   pieChart: [createCommonConfig, createPieConfig],
-  donutChart: [createCommonConfig, createDonutConfig]
+  donutChart: [createCommonConfig, createDonutConfig],
+  scatterplotChart: [createCommonConfig, createScatterplotConfig]
 };
 
 /**
