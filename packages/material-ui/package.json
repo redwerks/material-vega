@@ -36,5 +36,10 @@
   },
   "bugs": {
     "url": "https://github.com/redwerks/material-vega/issues"
+  },
+  "peerDependencies": {
+    "material-ui": "^0.20.2",
+    "react": ">= 16.0.0",
+    "react-vega": ">= 7.0.0"
   }
 }

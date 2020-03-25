@@ -13,7 +13,7 @@ function createMain(subpackage) {
           tsDocgenLoaderOptions: {
             tsconfigPath: path.resolve(__dirname, '../../tsconfig.json')
           },
-          include: [path.resolve(__dirname, '../../packages', subpackage)]
+          include: [path.resolve(__dirname, '../../packages')]
         }
       },
       '@material-vega/storybook-addon-chart-panels',
