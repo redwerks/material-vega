@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { MuiVegaLite } from '..';
 
 export default { title: 'Vega Material UI Vega/Line Chart' };
 
-export const Basic = () => (
+export const Basic = (): ReactElement => (
   <MuiVegaLite
     variant="lineChart"
     spec={{
