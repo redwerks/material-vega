@@ -10,7 +10,7 @@ export interface MaterialVegaOptions {
   /**
    * Corner radius to use for bars
    */
-  cornerRadius: number;
+  barCornerRadius: number;
   /**
    * Primary text color
    */
@@ -32,7 +32,7 @@ export interface MaterialVegaOptions {
 export const materialVegaOptionDefaults: MaterialVegaOptions = {
   font: '"Roboto", "Helvetica", "Arial", sans-serif',
   labelPadding: 8,
-  cornerRadius: 2,
+  barCornerRadius: 2,
   textColor: 'rgba(0, 0, 0, 0.87)',
   secondaryTextColor: 'rgba(0, 0, 0, 0.54)',
   dividerColor: 'rgba(0, 0, 0, 0.12)',
@@ -42,6 +42,8 @@ export const materialVegaOptionDefaults: MaterialVegaOptions = {
 /**
  * Apply default values to user supplied material vega options
  */
-export function extendDefaults(options: Partial<MaterialVegaOptions>) {
+export function extendDefaults(
+  options: Partial<MaterialVegaOptions>
+): MaterialVegaOptions {
   return Object.assign({}, materialVegaOptionDefaults, options);
 }

@@ -21,8 +21,8 @@ export const createVerticalBarConfig = (
       domainWidth: options.thickDomainLineWidth
     },
     bar: {
-      cornerRadiusTopLeft: options.cornerRadius,
-      cornerRadiusTopRight: options.cornerRadius
+      cornerRadiusTopLeft: options.barCornerRadius,
+      cornerRadiusTopRight: options.barCornerRadius
     }
   };
 };
@@ -45,8 +45,8 @@ export const createHorizontalBarConfig = (
       labelAlign: 'right'
     },
     bar: {
-      cornerRadiusTopRight: options.cornerRadius,
-      cornerRadiusBottomRight: options.cornerRadius
+      cornerRadiusTopRight: options.barCornerRadius,
+      cornerRadiusBottomRight: options.barCornerRadius
     }
   };
 };
