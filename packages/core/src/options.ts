@@ -24,6 +24,10 @@ export interface MaterialVegaOptions {
    */
   dividerColor: string;
   /**
+   * Default color for single marks
+   */
+  color: string | undefined;
+  /**
    * Bottom domain line thickness
    */
   thickDomainLineWidth: number;
@@ -36,6 +40,7 @@ export const materialVegaOptionDefaults: MaterialVegaOptions = {
   textColor: 'rgba(0, 0, 0, 0.87)',
   secondaryTextColor: 'rgba(0, 0, 0, 0.54)',
   dividerColor: 'rgba(0, 0, 0, 0.12)',
+  color: undefined,
   thickDomainLineWidth: 2
 };
 

@@ -9,6 +9,7 @@ import { MuiVegaTheme } from './MuiVegaTheme';
 
 export type MuiVegaProps = VegaProps & {
   variant: ThemeTypes;
+  color?: 'primary' | 'secondary' | 'error' | 'warning';
   themeOptions?: Partial<MaterialVegaOptions>;
 };
 
@@ -16,7 +17,13 @@ export type MuiVegaProps = VegaProps & {
  * <Vega> from react-vega but with a Material UI integrated theme
  */
 export const MuiVega: FC<MuiVegaProps> = props => {
-  const { variant, config: configProp, themeOptions, ...vegaProps } = props;
+  const {
+    variant,
+    color = 'primary',
+    config: configProp,
+    themeOptions,
+    ...vegaProps
+  } = props;
   const theme = useTheme<MuiVegaTheme>();
 
   if (typeof configProp === 'string') {
@@ -35,6 +42,7 @@ export const MuiVega: FC<MuiVegaProps> = props => {
             textColor: theme.palette.text.primary,
             secondaryTextColor: theme.palette.text.secondary,
             dividerColor: theme.palette.divider,
+            color: theme.palette[color].main,
             barCornerRadius: theme.shape.barCornerRadius,
             thickDomainLineWidth: 2, // @todo Find a place in MuiVegaTheme to add an option for this
             ...themeOptions
@@ -43,7 +51,7 @@ export const MuiVega: FC<MuiVegaProps> = props => {
         ),
         configProp || {}
       ),
-    []
+    [theme, color, themeOptions]
   );
 
   return <VegaLite config={config} {...vegaProps} />;

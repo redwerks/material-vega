@@ -20,6 +20,15 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
         fontWeight: 'normal'
       }
     },
+    // Common colors
+    arc: { fill: options.color },
+    area: { fill: options.color },
+    bar: { fill: options.color },
+    line: { stroke: options.color },
+    path: { stroke: options.color },
+    rect: { fill: options.color },
+    shape: { stroke: options.color },
+    symbol: { fill: options.color },
     axis: {
       // Domain lines
       domainColor: options.dividerColor,
