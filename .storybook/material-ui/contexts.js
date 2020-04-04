@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { ThemeProvider, createMuiTheme, colors } from '@material-ui/core';
+import { ThemeProvider, createMuiTheme, colors, Box } from '@material-ui/core';
 
 const ThemeContext = ({ theme: themeShade, primary, children }) => {
   const theme = useMemo(
@@ -13,7 +13,13 @@ const ThemeContext = ({ theme: themeShade, primary, children }) => {
     [themeShade, primary]
   );
 
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  return (
+    <ThemeProvider theme={theme}>
+      <Box flex={1} p={1} bgcolor="background.paper">
+        {children}
+      </Box>
+    </ThemeProvider>
+  );
 };
 
 export const contexts = [
