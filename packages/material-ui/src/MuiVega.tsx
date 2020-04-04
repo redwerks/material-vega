@@ -60,5 +60,5 @@ export const MuiVega: FC<MuiVegaProps> = props => {
     [theme, color, themeOptions]
   );
 
-  return <VegaLite config={config} {...vegaProps} />;
+  return <VegaLite config={config} renderer="svg" {...vegaProps} />;
 };
