@@ -10,6 +10,7 @@ import { MuiVegaTheme } from './MuiVegaTheme';
 export type MuiVegaProps = VegaProps & {
   variant: ThemeTypes;
   color?: 'primary' | 'secondary' | 'error' | 'warning';
+  background?: 'transparent' | 'paper' | 'default';
   themeOptions?: Partial<MaterialVegaOptions>;
 };
 
@@ -20,6 +21,7 @@ export const MuiVega: FC<MuiVegaProps> = props => {
   const {
     variant,
     color = 'primary',
+    background = 'transparent',
     config: configProp,
     themeOptions,
     ...vegaProps
@@ -43,6 +45,10 @@ export const MuiVega: FC<MuiVegaProps> = props => {
             secondaryTextColor: theme.palette.text.secondary,
             dividerColor: theme.palette.divider,
             color: theme.palette[color].main,
+            background:
+              background === 'transparent'
+                ? 'transparent'
+                : theme.palette.background[background],
             barCornerRadius: theme.shape.barCornerRadius,
             thickDomainLineWidth: 2, // @todo Find a place in MuiVegaTheme to add an option for this
             ...themeOptions

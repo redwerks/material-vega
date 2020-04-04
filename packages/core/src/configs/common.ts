@@ -6,6 +6,7 @@ import { MaterialVegaOptions } from '../options';
  */
 export const createCommonConfig = (options: MaterialVegaOptions): Config => {
   return {
+    background: options.background,
     style: {
       'guide-label': {
         font: options.font,

@@ -28,6 +28,10 @@ export interface MaterialVegaOptions {
    */
   color: string | undefined;
   /**
+   * Background color for charts
+   */
+  background: string;
+  /**
    * Bottom domain line thickness
    */
   thickDomainLineWidth: number;
@@ -41,6 +45,7 @@ export const materialVegaOptionDefaults: MaterialVegaOptions = {
   secondaryTextColor: 'rgba(0, 0, 0, 0.54)',
   dividerColor: 'rgba(0, 0, 0, 0.12)',
   color: undefined,
+  background: 'transparent',
   thickDomainLineWidth: 2
 };
 
