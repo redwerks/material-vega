@@ -1,6 +1,6 @@
 const path = require('path');
 
-function createMain(subpackage) {
+function createMain(subpackage, opts = {}) {
   return {
     stories: [`../../packages/${subpackage}/src/**/*.story.{js,jsx,ts,tsx}`],
     addons: [
@@ -16,8 +16,7 @@ function createMain(subpackage) {
           include: [path.resolve(__dirname, '../../packages')]
         }
       },
-      '@material-vega/storybook-addon-chart-panels',
-      '@material-vega/storybook-addon-preview-original'
+      ...opts.addons
     ]
   };
 }

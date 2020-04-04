@@ -15,6 +15,7 @@
     "@redwerks/eslint-config-jest": "^0.2.1",
     "@redwerks/eslint-config-react": "^0.2.1",
     "@redwerks/eslint-config-typescript": "^0.2.1",
+    "@storybook/addon-contexts": "^5.3.18",
     "@storybook/addons": "^5.3.8",
     "@storybook/api": "^5.3.9",
     "@storybook/components": "^5.3.9",
