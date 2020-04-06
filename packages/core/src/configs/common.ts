@@ -27,6 +27,7 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
     bar: { fill: options.color },
     line: { stroke: options.color },
     path: { stroke: options.color },
+    point: { color: options.color },
     rect: { fill: options.color },
     shape: { stroke: options.color },
     symbol: { fill: options.color },
@@ -71,6 +72,7 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       // Label text
       labelColor: options.textColor
     }
+    // range: { category: [options.color] }
   };
 };
 
