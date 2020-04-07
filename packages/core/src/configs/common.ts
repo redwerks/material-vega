@@ -1,3 +1,4 @@
+import * as vega from 'vega';
 import { Config } from 'vega-embed';
 import { MaterialVegaOptions } from '../options';
 
@@ -71,8 +72,8 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       titleColor: options.textColor,
       // Label text
       labelColor: options.textColor
-    }
-    // range: { category: [options.color] }
+    },
+    range: { category: vega.scheme('tableau10') }
   };
 };
 
