@@ -60,6 +60,12 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       domain: false,
       ticks: false
     },
+    rule: {
+      // Interactive rule line styles
+      // @note The opacity doesn't actually work due to https://github.com/vega/vega-lite/issues/6296
+      stroke: options.secondaryTextColor,
+      strokeDash: [2, 2]
+    },
     view: {
       // Hide the square chart border
       strokeWidth: 0
