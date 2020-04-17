@@ -48,7 +48,7 @@ interface TooltipReducerAction {
 /**
  * <Vega> from react-vega but with a Material UI integrated theme
  */
-export const MuiVega: FC<MuiVegaProps> = props => {
+export const MuiVega: FC<MuiVegaProps> = (props: MuiVegaProps) => {
   const {
     variant,
     color = 'primary',

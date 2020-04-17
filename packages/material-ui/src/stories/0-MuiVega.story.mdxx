@@ -1,0 +1,4 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { MuiVega } from '..';
+
+<Meta title="Vega Material UI Vega/Components/MuiVega" component={MuiVega} />

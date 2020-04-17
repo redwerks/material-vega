@@ -2,7 +2,9 @@ const path = require('path');
 
 function createMain(subpackage, opts = {}) {
   return {
-    stories: [`../../packages/${subpackage}/src/**/*.story.{js,jsx,ts,tsx}`],
+    stories: [
+      `../../packages/${subpackage}/src/**/*.story.{js,jsx,ts,tsx,mdx}`
+    ],
     addons: [
       {
         name: '@storybook/preset-typescript',
