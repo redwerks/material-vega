@@ -2,7 +2,7 @@ import { Box, Card, CardHeader, CardContent } from '@material-ui/core';
 import React, { ReactElement } from 'react';
 import { MuiVegaLite } from '..';
 
-export default { title: 'Vega Material UI Vega/Cards' };
+export default { title: 'Vega Material UI/Cards' };
 
 export const BarChart = (): ReactElement => (
   <Box clone display="inline-block">

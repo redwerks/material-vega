@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { MuiVegaLite } from '../..';
 
-export default { title: 'Vega Material UI Vega/Arc Charts/Donut Chart' };
+export default { title: 'Vega Material UI/Arc Charts/Donut Chart' };
 
 export const Basic = (): ReactElement => (
   <MuiVegaLite
