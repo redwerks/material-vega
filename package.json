@@ -19,6 +19,7 @@
     "@redwerks/eslint-config-react": "^0.2.1",
     "@redwerks/eslint-config-typescript": "^0.2.1",
     "@storybook/addon-contexts": "^5.3.18",
+    "@storybook/addon-docs": "^5.3.18",
     "@storybook/addons": "^5.3.8",
     "@storybook/api": "^5.3.9",
     "@storybook/components": "^5.3.9",
@@ -67,7 +68,7 @@
     "storybook-core": "node_modules/@storybook/html/bin/index.js -p 5501 -c .storybook/core -s ./static",
     "storybook-material-ui": "node_modules/@storybook/react/bin/index.js -p 5502 -c .storybook/material-ui -s ./static",
     "build-storybook-core": "node_modules/@storybook/html/bin/build.js -o build/core -c .storybook/core -s ./static",
-    "build-storybook-material-ui": "node_modules/@storybook/react/bin/build.js -o build/material-ui -c .storybook/material-ui -s ./static",
+    "build-storybook-material-ui": "node_modules/@storybook/react/bin/build.js -o build/material-ui -c .storybook/material-ui -s ./static --docs",
     "lint": "eslint --cache 'packages/**/*.{js,jsx,ts,tsx}' --ext .js,.jsx,.ts,.tsx",
     "pretty": "prettier --write \"packages/*/src/**/*.{js,jsx,ts,tsx}\" .eslintrc.js lerna.json tsconfig.json babel.config.js .storybook/**/*.js",
     "license": "yarn workspaces run license-validator -i"
