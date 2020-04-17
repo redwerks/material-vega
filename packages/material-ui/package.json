@@ -17,6 +17,7 @@
   "homepage": "https://github.com/redwerks/material-vega/tree/master/packages/material-ui#readme",
   "license": "ISC",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -32,6 +33,8 @@
     "url": "git+https://github.com/redwerks/material-vega.git"
   },
   "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
@@ -39,6 +42,7 @@
   },
   "peerDependencies": {
     "@material-ui/core": "^4.9.8",
+    "@material-vega/core": ">= 1.0.0",
     "react": ">= 16.0.0",
     "react-vega": ">= 7.0.0"
   },

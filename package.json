@@ -10,6 +10,7 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@material-ui/core": "^4.9.8",
+    "@material-vega/core": "*",
     "@material-vega/material-ui": "*",
     "@material-vega/storybook-addon-chart-panels": "0.2.0",
     "@material-vega/storybook-addon-preview-original": "0.2.0",
@@ -62,6 +63,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
+    "build": "yarn workspaces run build",
     "storybook-core": "node_modules/@storybook/html/bin/index.js -p 5501 -c .storybook/core -s ./static",
     "storybook-material-ui": "node_modules/@storybook/react/bin/index.js -p 5502 -c .storybook/material-ui -s ./static",
     "build-storybook-core": "node_modules/@storybook/html/bin/build.js -o build/core -c .storybook/core -s ./static",

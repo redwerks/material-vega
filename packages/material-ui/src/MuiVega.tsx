@@ -12,7 +12,11 @@ import { mergeConfig, TooltipHandler, Item } from 'vega';
 import { Vega } from 'react-vega';
 import { VegaProps } from 'react-vega/lib/Vega';
 import { useTheme } from '@material-ui/core';
-import { createTheme, ThemeTypes, MaterialVegaOptions } from '../../core/src';
+import {
+  createTheme,
+  ThemeTypes,
+  MaterialVegaOptions
+} from '@material-vega/core';
 import { MuiVegaTheme, defaultVegaTooltipOptions } from './MuiVegaTheme';
 import { calculatePosition } from './tooltip/position';
 import { MuiVegaTooltip, MuiVegaTooltipProps } from './tooltip/MuiVegaTooltip';
