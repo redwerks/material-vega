@@ -43,12 +43,14 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       grid: false,
       // Label text
       labelColor: options.secondaryTextColor,
+      labelFontSize: 12,
       // Apply a material padding between the label and chart
       labelPadding: options.labelPadding,
       // Do not angle label text
       labelAngle: 0,
       // Title text,
       titleColor: options.secondaryTextColor,
+      titleFontSize: 12,
       // Disable the title by default
       title: null
     },
@@ -76,8 +78,10 @@ export const createCommonConfig = (options: MaterialVegaOptions): Config => {
       // Title text (disabled by default)
       title: null,
       titleColor: options.textColor,
+      titleFontSize: 12,
       // Label text
-      labelColor: options.textColor
+      labelColor: options.textColor,
+      labelFontSize: 12
     },
     range: { category: vega.scheme('tableau10') }
   };
