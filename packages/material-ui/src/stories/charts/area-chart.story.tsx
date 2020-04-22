@@ -55,13 +55,22 @@ export const Stacked = (): ReactElement => (
         y: {
           aggregate: 'sum',
           field: 'count',
-          type: 'quantitative'
+          type: 'quantitative',
+          axis: {
+            orient: 'left',
+            labelAlign: 'right'
+          }
         },
         color: {
           field: 'series',
           type: 'nominal',
           scale: { scheme: 'category20b' }
         }
+      }
+    }}
+    config={{
+      legend: {
+        orient: 'right'
       }
     }}
   />
