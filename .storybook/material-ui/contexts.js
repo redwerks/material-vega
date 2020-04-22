@@ -30,7 +30,14 @@ export const contexts = [
     params: [
       {
         name: 'Light Theme',
-        props: { theme: 'light', primary: colors.deepPurple },
+        props: {
+          theme: 'light',
+          primary: {
+            light: colors.deepPurple['A200'],
+            main: colors.deepPurple['A700'],
+            dark: colors.deepPurple[800]
+          }
+        },
         default: true
       },
       {
@@ -39,7 +46,10 @@ export const contexts = [
       },
       {
         name: 'Dark Theme',
-        props: { theme: 'dark', primary: colors.deepPurple }
+        props: {
+          theme: 'dark',
+          primary: colors.deepPurple
+        }
       }
     ]
   }
