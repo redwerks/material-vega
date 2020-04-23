@@ -42,6 +42,15 @@ Override [`vega.scheme`](https://vega.github.io/vega/docs/schemes/)'s built-in c
 
 Please note that this registers the color schemes in the global vega.scheme and cannot be undone.
 
+### `useMuiVegaOptions(prefs)`
+
+Get an object with createTheme options based on the Material UI theme.
+
+Prefs:
+
+- **`color`** (default=`primary`, enum={`primary`, `secondary`, `error`, `warning`}): Default color for single value charts. This color will come from the MUI theme and can be switched between different parts of the palette.
+- **`background`** (default=`transparent`, enum={`transparent`, `paper`, `default`}): Default color for the chart background. `paper` and `default` will take the respective color from `palette.background` in the MUI theme.
+
 ### `<MuiVega>`
 
 - **`variant`** (required): Material Vega has a limited set of themes targeted for specific types of visualizations. One of the Theme Types from `@material-vega/core` must be provided as the variant. ([See list](https://github.com/redwerks/material-vega/tree/master/packages/core#theme-type))
