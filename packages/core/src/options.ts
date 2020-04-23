@@ -55,5 +55,12 @@ export const materialVegaOptionDefaults: MaterialVegaOptions = {
 export function extendDefaults(
   options: Partial<MaterialVegaOptions>
 ): MaterialVegaOptions {
-  return Object.assign({}, materialVegaOptionDefaults, options);
+  const opts: MaterialVegaOptions = Object.assign(
+    materialVegaOptionDefaults,
+    {}
+  );
+  for (const key in materialVegaOptionDefaults) {
+    if (key in options && options[key] !== undefined) opts[key] = options[key];
+  }
+  return opts;
 }
