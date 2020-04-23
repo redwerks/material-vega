@@ -33,7 +33,7 @@ export const createAreaLineConfig = (options: MaterialVegaOptions): Config => {
     },
     area: {
       line: true,
-      fillOpacity: 0.3
+      fillOpacity: 0.2
     }
   };
 };
