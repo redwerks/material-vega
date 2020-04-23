@@ -8,7 +8,7 @@ export const createLineConfig = (options: MaterialVegaOptions): Config => {
   return {
     line: {
       // Thin stroke lines
-      strokeWidth: 1
+      strokeWidth: 1.5
     }
   };
 };
