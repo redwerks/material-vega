@@ -7,7 +7,7 @@ export default {
 export const Basic = chart(
   {
     $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
-    width: 200,
+    width: { step: 55 },
     data: {
       values: [
         { quarter: 'Q1', percent: 0.2 },
