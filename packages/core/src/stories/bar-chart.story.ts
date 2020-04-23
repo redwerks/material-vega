@@ -41,7 +41,7 @@ export const Basic = chart(
 export const Horizontal = chart(
   {
     $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
-    height: 150,
+    height: { step: 55 },
     data: {
       values: [
         { quarter: 'Q1', percent: 0.2 },
@@ -63,7 +63,7 @@ export const Horizontal = chart(
         field: 'quarter',
         type: 'nominal',
 
-        band: 0.75
+        band: 0.5
       }
     }
   },
