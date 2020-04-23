@@ -36,6 +36,12 @@ ReactDOM.render(
 
 ## API
 
+### `overrideColorSchemes()`
+
+Override [`vega.scheme`](https://vega.github.io/vega/docs/schemes/)'s built-in categorical color schemes with similar color schemes that use MUI's color palette.
+
+Please note that this registers the color schemes in the global vega.scheme and cannot be undone.
+
 ### `<MuiVega>`
 
 - **`variant`** (required): Material Vega has a limited set of themes targeted for specific types of visualizations. One of the Theme Types from `@material-vega/core` must be provided as the variant. ([See list](https://github.com/redwerks/material-vega/tree/master/packages/core#theme-type))
