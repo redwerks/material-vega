@@ -29,7 +29,7 @@ import ReactDOM from 'react-dom';
 import { MuiVegaLite } from '@material-vega/material-ui';
 
 ReactDOM.render(
-  <MuiVegaLite spec={spec} variant="verticalBarChart" config={config} />,
+  <MuiVegaLite spec={spec} variant="verticalBarChart" />,
   document.getElementById('container')
 );
 ```
