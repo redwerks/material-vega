@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
     'Getting Started': ['installation'],
-    Features: ['mdx']
+    'API Reference': ['api/core', 'api/material-ui']
   }
 };
