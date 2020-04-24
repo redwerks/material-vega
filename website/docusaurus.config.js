@@ -15,7 +15,7 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/doc1',
+          to: 'docs/installation',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left'
@@ -34,8 +34,8 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1'
+              label: 'Getting Started',
+              to: 'docs/installation'
             },
             {
               label: 'Second Doc',
@@ -88,7 +88,9 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/'
+          editUrl:
+            'https://github.com/redwerks/material-vega/edit/master/website/',
+          remarkPlugins: [require('./src/plugins/remark-npm2yarn')]
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
