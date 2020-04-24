@@ -32,7 +32,7 @@ const transformNode = node => {
     {
       type: 'jsx',
       value:
-        `<Tabs defaultValue="npm" ` +
+        `<Tabs groupId="npmClient" defaultValue="npm" ` +
         `values={[
     { label: 'npm', value: 'npm', },
     { label: 'Yarn', value: 'yarn', },
