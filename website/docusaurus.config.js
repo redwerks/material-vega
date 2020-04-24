@@ -1,32 +1,31 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'Material Vega',
+  tagline: 'Material Design stylized themes for Vega Lite visualizations',
+  url: 'https://redwerks.github.io/material-vega/',
+  baseUrl: '/material-vega/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'redwerks', // Usually your GitHub org/user name.
+  projectName: 'material-vega', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Material Vega',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Material Vega',
+        src: 'img/logo.svg'
       },
       links: [
         {
           to: 'docs/doc1',
           activeBasePath: 'docs',
           label: 'Docs',
-          position: 'left',
+          position: 'left'
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/redwerks/material-vega',
           label: 'GitHub',
-          position: 'right',
-        },
-      ],
+          position: 'right'
+        }
+      ]
     },
     footer: {
       style: 'dark',
@@ -36,47 +35,52 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/doc1',
+              to: 'docs/doc1'
             },
             {
               label: 'Second Doc',
-              to: 'docs/doc2',
-            },
-          ],
+              to: 'docs/doc2'
+            }
+          ]
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/redwerks/material-vega'
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-          ],
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/material-vega'
+            }
+          ]
         },
         {
-          title: 'Social',
+          title: 'Related',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Vega Lite',
+              href: 'https://vega.github.io/vega-lite/docs/'
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Vega-React',
+              href: 'https://www.npmjs.com/package/react-vega'
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Material UI',
+              href: 'https://material-ui.com/'
             },
-          ],
-        },
+            {
+              label: 'Material Guidelines for Visualizations',
+              href:
+                'https://material.io/design/communication/data-visualization.html'
+            }
+          ]
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    },
+      copyright: `Copyright © ${new Date().getFullYear()} Redwerks. Built with Docusaurus.`
+    }
   },
   presets: [
     [
@@ -84,13 +88,12 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+          customCss: require.resolve('./src/css/custom.css')
+        }
+      }
+    ]
+  ]
 };
