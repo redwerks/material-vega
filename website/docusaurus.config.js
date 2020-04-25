@@ -21,6 +21,16 @@ module.exports = {
           position: 'left'
         },
         {
+          to: 'examples/core',
+          label: 'Examples (Core)',
+          position: 'left'
+        },
+        {
+          to: 'examples/material-ui',
+          label: 'Examples (material-ui)',
+          position: 'left'
+        },
+        {
           href: 'https://github.com/redwerks/material-vega',
           label: 'GitHub',
           position: 'right'
