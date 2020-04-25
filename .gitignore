@@ -109,3 +109,13 @@ dist
 # Build directories
 build/
 lib/
+
+# Docusarus
+# Generated files
+.docusaurus
+.cache-loader
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

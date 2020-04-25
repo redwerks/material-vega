@@ -1,0 +1,8 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.exampleFrame {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 60px - 32px);
+  border: none;
+}
