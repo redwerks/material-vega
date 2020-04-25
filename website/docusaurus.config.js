@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
+
 module.exports = {
   title: 'Material Vega',
   tagline: 'Material Design stylized themes for Vega Lite visualizations',
@@ -92,6 +95,14 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Redwerks. Built with Docusaurus.`
     }
   },
+  plugins: [
+    [
+      path.resolve(__dirname, 'src/plugins/docusaurus-storybook-build'),
+      {
+        cwd: path.resolve(__dirname, '../')
+      }
+    ]
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',

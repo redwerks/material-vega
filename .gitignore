@@ -110,7 +110,7 @@ dist
 build/
 lib/
 
-# Docsarus
+# Docusarus
 # Generated files
 .docusaurus
 .cache-loader
