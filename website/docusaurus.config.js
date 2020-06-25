@@ -51,8 +51,8 @@ module.exports = {
               to: 'docs/installation'
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2'
+              label: 'API Reference',
+              to: 'docs/api/core'
             }
           ]
         },
