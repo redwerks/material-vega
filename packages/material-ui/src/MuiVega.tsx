@@ -6,7 +6,8 @@ import React, {
   Reducer,
   ComponentType,
   forwardRef,
-  Ref
+  Ref,
+  useEffect
 } from 'react';
 import { useMemo } from 'react';
 import { mergeConfig, TooltipHandler, Item } from 'vega';
@@ -29,6 +30,10 @@ export type MuiVegaProps = VegaProps & {
   variant: ThemeTypes;
   color?: 'primary' | 'secondary' | 'error' | 'warning';
   background?: 'transparent' | 'paper' | 'default';
+  /**
+   * Using a ResizeObserver auto resize the Vega chart when the container changes sizes for a reason other than a resize event
+   */
+  autoResize?: boolean;
   themeOptions?: Partial<MaterialVegaOptions>;
   TooltipComponent?: ComponentType<MuiVegaTooltipProps>;
 };
@@ -56,6 +61,7 @@ export const MuiVega = forwardRef(
       variant,
       color = 'primary',
       background = 'transparent',
+      autoResize = false,
       tooltip: tooltipProp,
       TooltipComponent = MuiVegaTooltip,
       config: configProp,
@@ -74,18 +80,36 @@ export const MuiVega = forwardRef(
       );
     }
 
-    const vegaRef = useRef();
+    const vegaRef = useRef<Vega>();
     const ref = useForkRef(vegaRef, parentRef);
+
+    useEffect(() => {
+      const vegaEmbed = vegaRef.current.vegaEmbed.current;
+      const container = vegaEmbed.containerRef.current;
+
+      if (autoResize) {
+        const ro = new ResizeObserver(() => {
+          vegaRef.current.vegaEmbed.current.modifyView(view => {
+            view.resize().run();
+          });
+        });
+        ro.observe(container);
+
+        return (): void => {
+          ro.disconnect();
+        };
+      }
+    }, []);
 
     const [tooltipState, dispatchTooltip] = useReducer<
       Reducer<TooltipState | null, TooltipReducerAction>
     >((state, { event, value }) => {
       if (value == null || value === '') return null;
 
+      const container = vegaRef.current.vegaEmbed.current.containerRef.current;
       const { x, y } = calculatePosition(
         event,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (vegaRef.current as any).vegaEmbed.current.containerRef.current.getBoundingClientRect(),
+        container.getBoundingClientRect(),
         offsetX,
         offsetY
       );

@@ -5,10 +5,13 @@ export default { title: 'Vega Material UI/Charts/Line Chart' };
 
 export const Basic = (): ReactElement => (
   <MuiVegaLite
+    style={{ width: '100%' }}
+    autoResize
     variant="lineChart"
     spec={{
       $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
       description: "Google's stock price over time.",
+      width: 'container',
       data: {
         url: 'https://vega.github.io/vega-lite/examples/data/stocks.csv'
       },
