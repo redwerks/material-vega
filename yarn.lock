@@ -2206,6 +2206,11 @@
   resolved "https://registry.yarnpkg.com/@redwerks/eslint-config/-/eslint-config-0.2.1.tgz#902046e7da68a456202e6f2dfa69d5467668f623"
   integrity sha512-8Mmr0MC5kYiSYGr943ZydnYuR1R8PYRLk8hxmevgI0rvE2VDbBoR+uN/PO/Vs0RQX6V6B+yXh1ODmkodQA3BMA==
 
+"@rooks/use-fork-ref@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@rooks/use-fork-ref/-/use-fork-ref-3.6.0.tgz#bb1230fae6de4e0eea3363ac5509a15d470b2363"
+  integrity sha512-+xvZZb308+CpQ0mtctU/g8FjrYhETIZ/36Q1i18/42bScdNJ+Bgsi0OgXXQKdvO7S0PP3h90eQqeGBF+wgCMbg==
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
