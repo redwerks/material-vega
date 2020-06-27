@@ -89,9 +89,9 @@ export const MuiVega = forwardRef(
 
       if (autoResize) {
         const ro = new ResizeObserver(() => {
-          vegaRef.current.vegaEmbed.current.modifyView(view => {
-            view.resize().run();
-          });
+          // Vega does not have a way to tell it that the container has resized
+          // So we have to fake a window resize event when the container resizes
+          window.dispatchEvent(new Event('resize'));
         });
         ro.observe(container);
 
