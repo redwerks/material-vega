@@ -117,9 +117,18 @@ export const MuiVega = forwardRef(
       return { position: { x, y }, value };
     }, undefined);
 
+    const unmounted = useRef(false);
+    useEffect(() => {
+      unmounted.current = false;
+      return (): void => {
+        unmounted.current = true;
+      };
+    }, []);
     const tooltipHandler = useCallback<TooltipHandler>(
       (handler, event, item, value): void => {
-        dispatchTooltip({ handler, event, item, value });
+        if (!unmounted.current) {
+          dispatchTooltip({ handler, event, item, value });
+        }
       },
       []
     );
